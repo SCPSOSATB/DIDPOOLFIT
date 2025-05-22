@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".WelcomeScreen"
-    tools:ignore="HardcodedText">
+    tools:ignore="HardcodedText"
+    android:background="@color/black">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -28,6 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="DIDPOOL"
+                android:textColor="@color/gr_2"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
@@ -35,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Fit"
-                android:textColor="@color/black"
+                android:textColor="@color/cl_Hint"
                 android:textSize="36sp"
                 android:textStyle="bold" />
         </LinearLayout>
