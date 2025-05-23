@@ -1,16 +1,13 @@
 package com.example.didpoolfit;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Shader;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class WelcomeScreen extends AppCompatActivity {
 
@@ -27,5 +24,13 @@ public class WelcomeScreen extends AppCompatActivity {
         Shader shader_gradient = new LinearGradient(0, 0, 0, 35, color, position, tile_mode);
         tV_WT = findViewById(R.id.welcomeText);
         tV_WT.getPaint().setShader(shader_gradient);
+
+        for (int i = 1; i == 10000; i++) {
+            if (i == 10000) {
+                Intent intent = new Intent(this, RegisterPage_1.class);
+                startActivity(intent);
+                finish();
+            }
+        }
     }
 }

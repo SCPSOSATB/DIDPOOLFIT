@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/almost_black"
     tools:context=".RegisterPage_1"
     tools:ignore="HardcodedText">
 
@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="40sp"
+        android:layout_marginTop="60sp"
         android:orientation="vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -27,6 +27,7 @@
             android:textSize="18sp" />
 
         <TextView
+            android:id="@+id/createAccountText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="40sp"
@@ -38,14 +39,18 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/fullName_t"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textColorHint="@color/gr_2"
+            app:boxStrokeColor="@color/gr_2"
+            app:boxStrokeWidth="3sp"
+            app:hintTextColor="@color/gr_2">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/fullName"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8sp"
-                android:hint="Full Name"
+                android:layout_marginBottom="10sp"
                 android:inputType="textPersonName"
                 android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -53,14 +58,18 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/email_t"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="@color/gr_2"
+            app:boxStrokeColor="@color/gr_2"
+            app:boxStrokeWidth="3sp"
+            app:hintTextColor="@color/gr_2">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8sp"
-                android:hint="Email"
+                android:layout_marginBottom="10sp"
                 android:inputType="textEmailAddress"
                 android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -69,30 +78,40 @@
             android:id="@+id/password_toggle_t"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/gr_2"
+            app:boxStrokeColor="@color/gr_2"
+            app:boxStrokeWidth="3sp"
+            app:hintTextColor="@color/gr_2"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password_toggle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8sp"
-                android:hint="Password"
+                android:layout_marginBottom="10sp"
                 android:inputType="textPassword"
                 android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/repeat_password_toggle_t"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:hint="Repeat Password"
+            android:textColorHint="@color/gr_2"
+            app:boxStrokeColor="@color/gr_2"
+            app:boxStrokeWidth="3sp"
+            app:hintTextColor="@color/gr_2"
             app:passwordToggleEnabled="true">
+            <!--TODO fix stroke color -->
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/repeat_password_toggle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8sp"
-                android:hint="Repeat Password"
+                android:layout_marginBottom="12sp"
                 android:inputType="textPassword"
                 android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -100,17 +119,18 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="36sp"
+            android:textColor="@color/cl_Hint"
+            android:buttonTint="@color/cl_Hint"
             android:text="By continuing you accept our Privacy Policy and\nTerm of Use"
             android:textSize="12sp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:padding="19sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="80sp"
+            android:background="@drawable/grad_bt"
             android:text="Register"
-            android:foreground="@drawable/grad_bt"
-            android:textStyle="bold"/>
-        <!--TODO fix gradient button -->
-</LinearLayout>
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
