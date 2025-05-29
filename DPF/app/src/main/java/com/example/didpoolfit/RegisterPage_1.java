@@ -1,9 +1,12 @@
 package com.example.didpoolfit;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Shader;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -15,6 +18,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class RegisterPage_1 extends AppCompatActivity {
 
     TextView tV_CA;
+    Button bt_register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,5 +31,14 @@ public class RegisterPage_1 extends AppCompatActivity {
         Shader shader_gradient = new LinearGradient(0, 0, 0, 35, color, position, tile_mode);
         tV_CA = findViewById(R.id.createAccountText);
         tV_CA.getPaint().setShader(shader_gradient);
+
+        View.OnClickListener oclRegister = v -> {
+            Intent intent = new Intent(getApplicationContext(), RegisterPage_2.class);
+            startActivity(intent);
+            finish();
+        };
+
+        bt_register = findViewById(R.id.register_bt);
+        bt_register.setOnClickListener(oclRegister);
     }
 }

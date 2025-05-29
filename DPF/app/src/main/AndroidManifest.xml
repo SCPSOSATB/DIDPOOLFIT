@@ -13,21 +13,6 @@
         android:theme="@style/Theme.DIDPOOLFit"
         tools:targetApi="31">
         <activity
-            android:name=".RegisterPage_3_1"
-            android:exported="false" />
-        <activity
-            android:name=".RegisterPage_2"
-            android:exported="false" />
-        <activity
-            android:name=".RegisterPage_1"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".WelcomeScreen"
             android:exported="true">
             <intent-filter>
@@ -36,15 +21,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
-
 </manifest>
