@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/almost_black"
+    tools:context=".RegisterPage_3_1"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="50sp"
+        android:paddingTop="60sp"
+        android:paddingEnd="50sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="What is your goal?"
+            android:textColor="@color/gr_2"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18sp"
+            android:text="It will help us to choose a best\n program for you"
+            android:textAlignment="center"
+            android:textColor="@color/cl_Hint"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/grad_bt_k"
+            android:padding="15sp"
+            android:text="\t Improve Shape\n\t I have a low amount of body\n\t fat and need / want to build\n\t more muscle"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/grad_bt_k"
+            android:padding="15sp"
+            android:text="\t Lean &amp; Tone\n\t I’m “skinny fat”. look thin but\n\t have no shape. I want to add\n\t learn muscle in the right way"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/grad_bt_k"
+            android:padding="15sp"
+            android:text="\t Lose a Fat\n\t I have over 20 lbs to lose. I\n\t want to drop all this fat and\n\t gain muscle mass"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="60sp"
+            android:layout_marginTop="90sp"
+            android:background="@drawable/grad_bt"
+            android:text="Confirm"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
