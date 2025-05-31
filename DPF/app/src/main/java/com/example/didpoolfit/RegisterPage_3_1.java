@@ -24,8 +24,8 @@ public class RegisterPage_3_1 extends AppCompatActivity {
     Button bt_confirm;
 
     public boolean bt1_ch = true;
-    public boolean bt2_ch = true;
-    public boolean bt3_ch = true;
+    public boolean bt2_ch = false;
+    public boolean bt3_ch = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,27 +47,21 @@ public class RegisterPage_3_1 extends AppCompatActivity {
         View.OnClickListener oclChooseBt = v -> {
 
             if (!bt1_ch) {
-                bt1.setEnabled(true);
-                bt2.setEnabled(false);
-                bt3.setEnabled(false);
+                bt1.setBackgroundColor(Color.parseColor("#6B50F6"));
                 bt2.setBackgroundColor(Color.parseColor("#60595656"));
                 bt3.setBackgroundColor(Color.parseColor("#60595656"));
                 bt1_ch = true;
             }
 
             if (!bt2_ch) {
-                bt2.setEnabled(true);
-                bt1.setEnabled(false);
-                bt3.setEnabled(false);
+                bt2.setBackgroundColor(Color.parseColor("#6B50F6"));
                 bt1.setBackgroundColor(Color.parseColor("#60595656"));
                 bt3.setBackgroundColor(Color.parseColor("#60595656"));
                 bt2_ch = true;
             }
 
             if (!bt3_ch) {
-                bt3.setEnabled(true);
-                bt1.setEnabled(false);
-                bt2.setEnabled(false);
+                bt3.setBackgroundColor(Color.parseColor("#6B50F6"));
                 bt1.setBackgroundColor(Color.parseColor("#60595656"));
                 bt2.setBackgroundColor(Color.parseColor("#60595656"));
                 bt3_ch = true;

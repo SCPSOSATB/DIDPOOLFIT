@@ -46,7 +46,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
-            android:background="@drawable/grad_bt_k"
+            android:background="@drawable/grad_bt_k_a"
             android:padding="15sp"
             android:text="\t Improve Shape\n\t I have a low amount of body\n\t fat and need / want to build\n\t more muscle"
             android:textAlignment="textStart"
