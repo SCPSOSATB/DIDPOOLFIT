@@ -51,6 +51,8 @@ public class RegisterPage_3_1 extends AppCompatActivity {
                 bt2.setBackgroundColor(Color.parseColor("#60595656"));
                 bt3.setBackgroundColor(Color.parseColor("#60595656"));
                 bt1_ch = true;
+                bt2_ch = false;
+                bt3_ch = false;
             }
 
             if (!bt2_ch) {
@@ -58,6 +60,8 @@ public class RegisterPage_3_1 extends AppCompatActivity {
                 bt1.setBackgroundColor(Color.parseColor("#60595656"));
                 bt3.setBackgroundColor(Color.parseColor("#60595656"));
                 bt2_ch = true;
+                bt1_ch = false;
+                bt3_ch = false;
             }
 
             if (!bt3_ch) {
@@ -65,6 +69,8 @@ public class RegisterPage_3_1 extends AppCompatActivity {
                 bt1.setBackgroundColor(Color.parseColor("#60595656"));
                 bt2.setBackgroundColor(Color.parseColor("#60595656"));
                 bt3_ch = true;
+                bt1_ch = false;
+                bt2_ch = false;
             }
         };
 
