@@ -23,6 +23,10 @@ public class RegisterPage_3_1 extends AppCompatActivity {
     Button bt3;
     Button bt_confirm;
 
+    public boolean bt1_ch = true;
+    public boolean bt2_ch = true;
+    public boolean bt3_ch = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,9 +45,6 @@ public class RegisterPage_3_1 extends AppCompatActivity {
         bt_confirm = findViewById(R.id.bt_confirm);
 
         View.OnClickListener oclChooseBt = v -> {
-            boolean bt1_ch = true;
-            boolean bt2_ch = true;
-            boolean bt3_ch = true;
 
             if (bt1_ch == true) {
                 bt2.setEnabled(false);
