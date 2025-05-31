@@ -58,7 +58,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
-            android:background="@drawable/grad_bt_k"
+            android:background="@color/f_bt"
             android:padding="15sp"
             android:text="\t Lean &amp; Tone\n\t I’m “skinny fat”. look thin but\n\t have no shape. I want to add\n\t learn muscle in the right way"
             android:textAlignment="textStart"
@@ -70,7 +70,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
-            android:background="@drawable/grad_bt_k"
+            android:background="@color/f_bt"
             android:padding="15sp"
             android:text="\t Lose a Fat\n\t I have over 20 lbs to lose. I\n\t want to drop all this fat and\n\t gain muscle mass"
             android:textAlignment="textStart"
@@ -86,6 +86,5 @@
             android:text="Confirm"
             android:textColor="@color/white"
             android:textStyle="bold" />
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

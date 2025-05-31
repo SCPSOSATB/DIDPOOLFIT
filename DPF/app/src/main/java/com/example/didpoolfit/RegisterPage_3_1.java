@@ -46,36 +46,30 @@ public class RegisterPage_3_1 extends AppCompatActivity {
 
         View.OnClickListener oclChooseBt = v -> {
 
-            if (bt1_ch == true) {
-                bt2.setEnabled(false);
-                bt3.setEnabled(false);
-                bt1_ch = false;
-            } else {
+            if (!bt1_ch) {
                 bt1.setEnabled(true);
                 bt2.setEnabled(false);
                 bt3.setEnabled(false);
+                bt2.setBackgroundColor(Color.parseColor("#60595656"));
+                bt3.setBackgroundColor(Color.parseColor("#60595656"));
                 bt1_ch = true;
             }
 
-            if (bt2_ch == true) {
-                bt1.setEnabled(false);
-                bt3.setEnabled(false);
-                bt2_ch = false;
-            } else {
+            if (!bt2_ch) {
                 bt2.setEnabled(true);
                 bt1.setEnabled(false);
                 bt3.setEnabled(false);
+                bt1.setBackgroundColor(Color.parseColor("#60595656"));
+                bt3.setBackgroundColor(Color.parseColor("#60595656"));
                 bt2_ch = true;
             }
 
-            if (bt3_ch == true) {
-                bt1.setEnabled(false);
-                bt2.setEnabled(false);
-                bt3_ch = false;
-            } else {
+            if (!bt3_ch) {
                 bt3.setEnabled(true);
                 bt1.setEnabled(false);
                 bt2.setEnabled(false);
+                bt1.setBackgroundColor(Color.parseColor("#60595656"));
+                bt2.setBackgroundColor(Color.parseColor("#60595656"));
                 bt3_ch = true;
             }
         };
