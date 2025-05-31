@@ -64,6 +64,7 @@ public class RegisterPage_2 extends AppCompatActivity {
                 TIL_CG.setError("Fill in all the fields");
             } else {
                 TIL_CG.setError(null);
+                allChecked = true;
             }
 
             if (ET_DOB.getText().toString().isEmpty()) {
@@ -71,6 +72,7 @@ public class RegisterPage_2 extends AppCompatActivity {
                 TIL_DOB.setError("Fill in all the fields");
             } else {
                 TIL_DOB.setError(null);
+                allChecked = true;
             }
 
             if (ET_YW.getText().toString().isEmpty()) {
@@ -78,6 +80,7 @@ public class RegisterPage_2 extends AppCompatActivity {
                 TIL_YW.setError("Fill in all the fields");
             } else {
                 TIL_YW.setError(null);
+                allChecked = true;
             }
 
             if (ET_YH.getText().toString().isEmpty()) {
@@ -85,6 +88,7 @@ public class RegisterPage_2 extends AppCompatActivity {
                 TIL_YH.setError("Fill in all the fields");
             } else {
                 TIL_YH.setError(null);
+                allChecked = true;
             }
 
             if (allChecked) {

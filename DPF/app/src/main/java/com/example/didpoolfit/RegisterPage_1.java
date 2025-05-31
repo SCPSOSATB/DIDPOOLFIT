@@ -76,6 +76,7 @@ public class RegisterPage_1 extends AppCompatActivity {
                 TIL_FN.setError("Fill in all the fields");
             } else {
                 TIL_FN.setError(null);
+                allChecked = true;
             }
 
             if (ET_EA.getText().toString().isEmpty()) {
@@ -87,6 +88,7 @@ public class RegisterPage_1 extends AppCompatActivity {
                     TIL_EA.setError("Check that the date is filled in correctly");
                 } else {
                     TIL_EA.setError(null);
+                    allChecked = true;
                 }
             }
 
@@ -99,18 +101,22 @@ public class RegisterPage_1 extends AppCompatActivity {
                     TIL_P.setError("The password is not secure");
                 } else {
                     TIL_P.setError(null);
+                    allChecked = true;
                 }
             }
 
-            if (ET_P.getText().toString().equals(ET_RP.getText().toString())) {
+            if (!ET_P.getText().toString().equals(ET_RP.getText().toString())) {
                 allChecked = false;
                 TIL_RP.setError("Password don't match");
             } else {
                 TIL_RP.setError(null);
+                allChecked = true;
             }
 
             if (!chB.isChecked()) {
                 allChecked = false;
+            } else {
+                allChecked = true;
             }
 
             if (allChecked) {
