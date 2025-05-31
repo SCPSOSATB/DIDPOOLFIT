@@ -21,5 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegisterPage_1"/>
+        <activity android:name=".RegisterPage_2"/>
+        <activity android:name=".RegisterPage_3_1"/>
+        <activity android:name=".MainActivity"/>
     </application>
 </manifest>

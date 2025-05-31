@@ -5,17 +5,14 @@ import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Shader;
 import android.os.Bundle;
-import android.os.CountDownTimer;
+import android.os.Handler;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.Locale;
-
 public class WelcomeScreen extends AppCompatActivity {
 
     TextView tV_WT;
-    TextView tV_Debug;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,16 +28,9 @@ public class WelcomeScreen extends AppCompatActivity {
 
         Intent intent = new Intent(this, RegisterPage_1.class);
 
-        new CountDownTimer(5000, 1000) {
-            public void onTick(long millisUntilFinished) {
-                tV_Debug.setText(String.format(Locale.getDefault(), "%d sec.", millisUntilFinished / 1000L));
-            }
-
-            public void onFinish() {
-                tV_Debug.setText("DONE");
-                startActivity(intent);
-                finish();
-            }
-        }.start();
+        new Handler().postDelayed(() -> {
+            startActivity(intent);
+            finish();
+        }, 3000);
     }
 }

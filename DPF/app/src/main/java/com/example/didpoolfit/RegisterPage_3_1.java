@@ -6,6 +6,7 @@ import android.graphics.LinearGradient;
 import android.graphics.Shader;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -17,6 +18,10 @@ import androidx.core.view.WindowInsetsCompat;
 public class RegisterPage_3_1 extends AppCompatActivity {
 
     TextView tv_TP;
+    Button bt1;
+    Button bt2;
+    Button bt3;
+    Button bt_confirm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +34,61 @@ public class RegisterPage_3_1 extends AppCompatActivity {
         Shader shader_gradient = new LinearGradient(0, 0, 0, 35, color, position, tile_mode);
         tv_TP = findViewById(R.id.textTop);
         tv_TP.getPaint().setShader(shader_gradient);
+
+        bt1 = findViewById(R.id.bt_1);
+        bt2 = findViewById(R.id.bt_2);
+        bt3 = findViewById(R.id.bt_3);
+        bt_confirm = findViewById(R.id.bt_confirm);
+
+        View.OnClickListener oclChooseBt = v -> {
+            boolean bt1_ch = true;
+            boolean bt2_ch = true;
+            boolean bt3_ch = true;
+
+            if (bt1_ch == true) {
+                bt2.setEnabled(false);
+                bt3.setEnabled(false);
+                bt1_ch = false;
+            } else {
+                bt1.setEnabled(true);
+                bt2.setEnabled(false);
+                bt3.setEnabled(false);
+                bt1_ch = true;
+            }
+
+            if (bt2_ch == true) {
+                bt1.setEnabled(false);
+                bt3.setEnabled(false);
+                bt2_ch = false;
+            } else {
+                bt2.setEnabled(true);
+                bt1.setEnabled(false);
+                bt3.setEnabled(false);
+                bt2_ch = true;
+            }
+
+            if (bt3_ch == true) {
+                bt1.setEnabled(false);
+                bt2.setEnabled(false);
+                bt3_ch = false;
+            } else {
+                bt3.setEnabled(true);
+                bt1.setEnabled(false);
+                bt2.setEnabled(false);
+                bt3_ch = true;
+            }
+        };
+
+        View.OnClickListener oclConfirm = v -> {
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
+            finish();
+        };
+
+        bt1.setOnClickListener(oclChooseBt);
+        bt2.setOnClickListener(oclChooseBt);
+        bt3.setOnClickListener(oclChooseBt);
+
+        bt_confirm.setOnClickListener(oclConfirm);
     }
 }

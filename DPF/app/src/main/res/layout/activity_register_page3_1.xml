@@ -42,6 +42,7 @@
             android:textSize="18sp" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
@@ -53,6 +54,7 @@
             android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
@@ -64,6 +66,7 @@
             android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_3"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
@@ -75,6 +78,7 @@
             android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_confirm"
             android:layout_width="fill_parent"
             android:layout_height="60sp"
             android:layout_marginTop="90sp"
