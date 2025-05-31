@@ -44,7 +44,7 @@ public class RegisterPage_3_1 extends AppCompatActivity {
         bt3 = findViewById(R.id.bt_3);
         bt_confirm = findViewById(R.id.bt_confirm);
 
-        View.OnClickListener oclChooseBt = v -> {
+        View.OnClickListener oclChooseBt1 = v -> {
 
             if (!bt1_ch) {
                 bt1.setBackgroundColor(Color.parseColor("#6B50F6"));
@@ -54,7 +54,9 @@ public class RegisterPage_3_1 extends AppCompatActivity {
                 bt2_ch = false;
                 bt3_ch = false;
             }
+        };
 
+        View.OnClickListener oclChooseBt2 = v -> {
             if (!bt2_ch) {
                 bt2.setBackgroundColor(Color.parseColor("#6B50F6"));
                 bt1.setBackgroundColor(Color.parseColor("#60595656"));
@@ -63,6 +65,9 @@ public class RegisterPage_3_1 extends AppCompatActivity {
                 bt1_ch = false;
                 bt3_ch = false;
             }
+        };
+
+        View.OnClickListener oclChooseBt3 = v -> {
 
             if (!bt3_ch) {
                 bt3.setBackgroundColor(Color.parseColor("#6B50F6"));
@@ -80,9 +85,9 @@ public class RegisterPage_3_1 extends AppCompatActivity {
             finish();
         };
 
-        bt1.setOnClickListener(oclChooseBt);
-        bt2.setOnClickListener(oclChooseBt);
-        bt3.setOnClickListener(oclChooseBt);
+        bt1.setOnClickListener(oclChooseBt1);
+        bt2.setOnClickListener(oclChooseBt2);
+        bt3.setOnClickListener(oclChooseBt3);
 
         bt_confirm.setOnClickListener(oclConfirm);
     }
