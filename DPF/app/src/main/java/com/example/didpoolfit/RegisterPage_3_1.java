@@ -15,6 +15,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.regex.Pattern;
+
 public class RegisterPage_3_1 extends AppCompatActivity {
 
     TextView tv_TP;

@@ -61,10 +61,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10sp"
-                android:inputType=""
                 android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
-        <!--TODO add input type -->
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/date_of_birth_t"

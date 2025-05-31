@@ -105,7 +105,6 @@
             app:boxStrokeWidth="3sp"
             app:hintTextColor="@color/gr_2"
             app:passwordToggleEnabled="true">
-            <!--TODO fix stroke color -->
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/repeat_password_toggle"
@@ -117,13 +116,13 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
+            android:id="@+id/chBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/cl_Hint"
             android:buttonTint="@color/gr_2"
             android:text="By continuing you accept our Privacy Policy and\nTerm of Use"
             android:textSize="12sp" />
-        <!--TODO fix button color/color -->
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/register_bt"
